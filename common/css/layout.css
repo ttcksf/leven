@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/**
+ *
+ * レイアウト、共通コンテンツ
+ *
+**/
+
+
+/**
+ * ラッパー
+**/
+
+#wrapper {
+/*	overflow: hidden; */
+}
+
+
+/**
+ * ヘッダー
+**/
+
+#header {
+	width: 100%;
+}
+
+#header .head-line {
+  margin: 0 auto 35px;
+  height: 35px;
+    background: #8DC21F;
+}
+
+#header #head-box {
+    margin: 0 auto;
+    padding: 0;
+	width: 1300px;
+}
+
+#header h1 {
+    float: left;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+#header .insta {
+    display: inline;
+    margin: 0 0 40px 0;
+    padding: 10px 0 0 20px;
+}
+
+#header #head-tel {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#header #head-menu-box {
+    margin: 30px auto;
+    padding: 0;
+	width: 900px;
+}
+
+#header .head-menu {
+    float: left;
+    margin: 0 auto;
+    padding: 10px 0;
+	width: 178px;
+    border-left: 2px dotted #000;
+    font-size: 18px;
+}
+
+#header .head-menu02 {
+    float: left;
+    margin: 0 auto;
+    padding: 10px 0;
+	width: 176px;
+    border-left: 2px dotted #000;
+    border-right: 2px dotted #000;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/**
+ * コンテンツ
+**/
+
+#content {
+  overflow: hidden;
+  display: block;
+}
+
+
+/**
+ * フッター
+**/
+
+#footer {
+	width: 100%;
+	text-align: center;
+	background: url("../images/footer.jpg") top center no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+#footer {
+	width: 100%;
+	text-align: center;
+	background: url("../images/footer.jpg") top center repeat;
+}
+}
+
+#footer .footer-box {
+	margin: 0 auto;
+    padding: 40px 0 0;
+	width: 904px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#footer .footer-box02 {
+	margin: 0 auto;
+    padding: 40px 0 0;
+	width: 1500px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#footer .wrap .name {
+	width: 100%;
+}
+
+#footer .wrap .name img {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#footer .wrap .name02 {
+	width: 100%;
+}
+
+#footer .wrap .name02 img {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+#footer .wrap .tel {
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif", "ＭＳ Ｐ明朝", "ＭＳ 明朝";
+  line-height: 1.6em;
+  font-size: 14px;
+}
+
+#footer .wrap .copy {
+	padding: 15px 0 15px 0;
+  line-height: 1.6em;
+  font-size: 12px;
+  font-weight: normal;
+}

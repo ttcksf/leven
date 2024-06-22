@@ -1,0 +1,7 @@
+AddType application/x-httpd-php .php .html
+AddHandler application/x-httpd-php .php .html
+
+SetEnvIf Request_URI ".*" Ngx_Cache_NoCacheMode=off
+SetEnvIf Request_URI ".*" Ngx_Cache_StaticMode
+
+AddHandler fcgid-script .html

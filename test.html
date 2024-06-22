@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="description" content="介護・福祉用品のレンタル・販売、住宅改修なら株式会社東海レーベン(愛知県 東海市/大府市/知多市/東浦町)"/>
+<meta name="keywords" content="介護,福祉用品,レンタル,販売,住宅改修,愛知,東海市,大府市,知多市,東浦町,中村不動産,中村土木建設,ナカミライズ"/>
+<title>福祉用具のレンタル・販売｜株式会社東海レーベン</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="common/css/base.css">
+<link rel="stylesheet" href="common/css/common.css">
+<link rel="stylesheet" href="common/css/content.css">
+<link rel="stylesheet" href="common/css/layout.css">
+<link rel="stylesheet" href="common/css/responsive.css">
+</head>
+<body>
+<div id="wrapper">
+	<!-- ヘッダー開始 -->
+	<header id="header">
+    <div class="head-line"></div>
+    <div id="head-box">
+    <h1><a href="./"><img src="common/images/head-logo.png" width="484" height="72" alt="介護・福祉用品のレンタル・販売、住宅改修なら株式会社東海レーベン"></a></h1>
+    <div id="head-tel"><img src="common/images/head-tel.png" width="386" height="120" alt="052-627-3000"/></div>
+    <div style="clear: both"></div>
+    <div id="head-menu-box">
+        <div class="head-menu"><a href="./">ホーム</a></div>
+        <div class="head-menu"><a href="#a01">事業内容</a></div>
+        <div class="head-menu"><a href="#a02">会社概要</a></div>
+        <div class="head-menu"><a href="#a03">採用情報</a></div>
+        <div class="head-menu02"><a href="#a04">お問い合わせ</a></div>
+    <div style="clear: both"></div>
+    </div>
+    </div>
+	</header>
+	<!-- ヘッダー終了 -->
+	<!-- コンテンツ開始 -->
+	<main id="content" class="clearfix">
+    <article class="box">
+      <p class="intro"><img src="images/index/top-img.jpg" alt="一人ひとりの人生に寄り添った介護を"></p>
+      <div class="head00">
+        <h2><img src="images/index/h2-blog-content.png" width="571" height="52" alt="お知らせ＆スタッフブログ"/></h2>
+<?php
+	$rssdata = simplexml_load_file("https://toukai-leven.jp/blog/?feed=rss2");
+
+	// 読み込み件数を決定する
+	$num_of_data = 3;
+
+	//出力内容の初期化
+	$outdata = "";
+
+	//設定した読み込み件数分だけ取得を繰り返す
+	for ($i=0; $i<$num_of_data; $i++){
+		$entry = $rssdata->channel->item[$i]; //記事1個取得
+		$date = date("Y年 m月 d日", strtotime($entry->pubDate));
+		$title = $entry->title; //タイトル取得
+		$link = $entry->link; //リンクURL取得
+
+		//出力内容に日付けを入れる
+		$outdata .= '<li>' . $date;
+
+		//出力内容にリンク付きでタイトルを入れる
+		$outdata .= '　<a href="' . $link . '"><span>' . $title . '</span></a></li>';
+	}
+
+	echo '<ul>' . $outdata . '</ul>'; //実行結果を出力する
+?>
+
+<br><a class="btn" href="https://toukai-leven.jp/blog/" target="_blank"><span>お知らせ＆スタッフブログ一覧はこちら</span></a>
+      </div>
+      
+      <div class="head01" id="a01">
+        <h2><img src="images/index/h2-business-content.png" width="336" height="52" alt="事業内容"/></h2>
+        <div class="leven"><img src="images/index/content-leven.png" width="500" height="46" alt="東海レーベン"/></div>
+      <ul class="business_list">
+        <li class="logo01"><a href="careplan.html"><img src="images/index/kaede.png" width="480" height="495" alt="ケアプラン楓　居宅介護支援"></a></li>
+        <li class="logo02"><a href="rental.html"><img src="images/index/nakamura01.png" width="480" height="495" alt="ライフサポートなかむら　福祉用用具のレンタル・販売"></a></li>
+        <li class="logo03"><a href="reform.html"><img src="images/index/nakamura02.png" width="480" height="495" alt="ライフサポートなかむら　住宅改修"></a></li>
+        <li class="logo04"><a href="fitness.html"><img src="images/index/fitness.png" width="480" height="495" alt="フィットネスかえで　通所介護"></a></li>
+      </ul>
+        <div class="insurance"><a href="insurance.html"><img src="images/index/kaigo-insurance.png" width="1100" height="68" alt="介護認定の手続きはお済ですか？"/></a></div>
+      </div>
+      
+      <div class="head02" id="a02">
+        <h2><img src="images/index/h2-about-content.png" width="336" height="52" alt="会社概要"/></h2>
+        <div class="about-com">私たち株式会社東海レーベンは、地域密着でお客様一人ひとりに細やかな対応を心がけ<br>
+皆様の健やかで安心できる暮らしをお手伝いします</div>
+      <div id="about-box">
+        <div class="about-add">
+            <p class="bold pb15">株式会社東海レーベン</p>〒476-0015　愛知県東海市東海町２丁目6-5　かえでビル1F<br>
+TEL 052-627-3000 FAX 052-627-3001<br>
+営業時間　9:00～17:00　定休日　土曜日・日曜日<span class="font12">&nbsp;※祝日は営業</span>
+                        <p class="pt15"><a href="about.html">MORE &gt;&gt;</a></p>
+        </div>
+          <div class="about-cut"><img src="images/index/about-cut.png" width="361" height="241" alt=""/></div>
+    <div style="clear: both"></div>
+      </div>
+      </div>
+      
+      <div class="head03" id="a03">
+        <h2><img src="images/index/h2-recruit-content.png" width="336" height="52" alt="採用情報"/></h2>
+      <div id="recruit-box">
+      <div class="recruit-img"><a href="staff.html"><img src="images/index/recruit-img.png" width="1100" height="413" alt="スタッフインタビュー"/></a></div>
+      </div>
+      </div>
+      
+      
+      <div class="head04" id="a04">
+        <h2><img src="images/index/h2-contact-content.png" width="352" height="53" alt="お問い合わせ"/></h2>
+        <div class="contact-com">介護・福祉に関することや施設の見学など、お気軽にご相談・お問い合わせください。</div>
+      <div class="contact-tel"><a href="contact.html"><img src="images/index/contact-tel.png" width="1100" height="75" alt="052-627-3000 株式会社東海レーベン"/></a></div>
+      </div>
+      
+      
+      <div class="head05">
+    <div id="under-menu-box">
+        <div class="under-menu"><a href="./">ホーム</a></div>
+        <div class="under-menu"><a href="#a01">事業内容</a></div>
+        <div class="under-menu"><a href="#a02">会社概要</a></div>
+        <div class="under-menu"><a href="#a03">採用情報</a></div>
+        <div class="under-menu02"><a href="#a04">お問い合わせ</a></div>
+    <div style="clear: both"></div>
+    </div>
+      </div>
+      
+
+    </article>
+	</main>
+	<!-- コンテンツ終了 -->
+	<!-- フッター開始 -->
+	<footer id="footer">
+		<div class="footer-box">
+		<div class="wrap clearfix">
+      <p class="name"><img src="common/images/foot-logo.png" width="344" height="161" alt="株式会社東海レーベン"></p>
+      <p class="tel">〒476-0015　愛知県東海市東海町２丁目6-5 かえでビル1F<br>
+TEL 052-627-3000 　　FAX 052-627-3001</p>
+      <p class="copy">Copyright &copy; Toukaileven Inc. All rights reserved.</p>
+		</div>
+		</div>
+	</footer>
+	<!-- フッター終了 -->
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74285612-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74285612-2');
+</script>
+
+</body>
+</html>

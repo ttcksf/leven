@@ -1,0 +1,33 @@
+///*------------------------------
+// フッター
+//------------------------------*/
+.site-footer {
+    
+    .footer-bottom {
+        margin-top: 40px;
+        padding: 30px 0;
+        width: 100%;
+
+        background: url(#{$imgDir}helper/footer-bg.jpg) no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        font-size: $font-small;
+
+        >div {
+            @include not-last {
+                margin-bottom: 15px;
+            }
+        }
+
+        //アクセス
+        .footer-access {
+            font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif", "ＭＳ Ｐ明朝", "ＭＳ 明朝";
+        }
+
+        //コピーライト
+        .footer-copy {
+
+        }
+    }
+}

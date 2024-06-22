@@ -1,0 +1,190 @@
+///*------------------------------
+// 共通のパーツ
+//------------------------------*/
+
+img {
+    max-width: 100%;
+}
+
+///*------------------------------
+// display ○○
+//------------------------------*/
+//FlexBox
+.d_flex {
+    display: flex;
+    justify-content: center;
+}
+
+//CssGrid
+.d_grid {
+    display: grid;
+    justify-content: center;
+}
+
+//display none
+.d_none {
+    display: none;
+}
+
+//PCのみの表示
+.pc-device {
+    @include mq(sp) {
+        display: none;
+    }
+}
+
+//スマホのみの表示
+.sp-device {
+    @include mq(pc) {
+        display: none;
+    }
+
+    //tab属性がないならばコメントアウト
+    //@include mq(tab) {
+    //    display: none;
+    //}
+}
+
+///*------------------------------
+// wrap、inner
+//------------------------------*/
+//wrap
+.wrap {
+    width: 100%;
+    padding: $px-40 0;
+
+    position: relative;
+
+    //スマホ
+    @include mq(sp) {
+        padding: $px-40/2 0;
+    }
+}
+
+//フッターのwrapは無視
+footer {
+    .wrap {
+        padding: 0;
+    }
+}
+
+//inner
+.inner {
+    display: block;
+    width: $ContentsWidth;
+    max-width: $MaxWidth;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    //インナー下のdiv要素マージン指定
+    > div {
+        @include not-last {
+            margin-bottom: $px-40;
+
+            @include mq(sp) {
+                margin-bottom: $px-40/2;
+            }
+        }
+    }
+}
+
+//インナー幅解除
+.inner-max {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+///*------------------------------
+// 見出し
+//------------------------------*/
+//見出し1
+.head-1 {
+    display: block;
+    width: 230px;
+    max-width: 100%;
+    @include margin-center;
+
+    text-align: center;
+    background-color: $color-main;
+    color: white;
+
+    border-radius: 20px;
+}
+
+//ナビ
+.site-nav {
+    @include margin-center;
+    width: 900px;
+    max-width: $MaxWidth;
+    //スマホ
+    @include mq(sp) {
+        font-size: 10.5px;
+    }
+
+    ul {
+        text-align: center;
+        li {
+            flex: 1;
+            border-right: 2px dotted $color-text;
+            @include first {
+                border-left: 2px dotted $color-text;
+            }
+
+            //リンク
+            a {
+                //ホバー
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+//お問い合わせはこちら
+.contact-link {
+    //インナー
+    .inner {
+        background-color: white;
+        padding: $px-40 0;
+
+        //スマホ
+        @include mq(sp) {
+            padding: $px-40/2 0;
+        }
+    }
+
+    .contact-wrap {
+        width: $ContentsWidth;
+        max-width: $MaxWidth;
+        @include margin-center;
+        align-items: center;
+
+        //スマホ
+        @include mq(sp) {
+            flex-direction: column;
+        }
+
+        >div {
+            flex: 1;
+
+            @include not-last {
+                margin-right: 30px;
+
+                //スマホ
+                @include mq(sp) {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        //電話番号
+        .contact-tel {
+            flex: 2;
+        }
+    }
+}
+

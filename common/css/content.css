@@ -1,0 +1,738 @@
+@charset "UTF-8";
+
+/**
+ *
+ * コンテンツ
+ *
+**/
+
+
+.box {
+	padding: 50px 0 120px 0;
+  width: 100%;
+	overflow: hidden;
+}
+
+.box .intro {
+	margin: 0 auto 10px;
+	padding: 0 0 0 0;
+}
+
+.box .intro img {
+    width: 100%;
+    height: auto;
+}
+
+.box .recruit {
+    text-align: right;
+	margin: 0 auto 10px;
+	padding: 0 0 0 0;
+    width: 1300px;
+}
+
+.box .decoration {
+	margin: 0 auto 55px;
+	padding: 0 0 0 0;
+  width: 100%;
+  mix-width: 100%;
+}
+
+.box .decoration02 {
+	margin: 0 auto 55px;
+	padding: 0 0 0 0;
+  width: 100%;
+  mix-width: 100%;
+}
+
+.box .head00 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+
+.box .head01 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+
+.box .head02 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+
+.box .head03 {
+	margin: 0 0 0 0;
+	padding: 0 0 45px 0;
+  text-align: center;
+    width: 100%;
+}
+
+.box .head04 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+  text-align: center;
+    width: 100%;
+}
+
+.box .head05 {
+	margin: 0 0 0 0;
+	padding: 30px 0 0 0;
+  text-align: center;
+    width: 100%;
+}
+
+.box .head00 h2 {
+	margin: 100px auto 10px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .head01 h2 {
+	margin: 100px auto 90px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .head02 h2 {
+	margin: 100px auto 40px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .head03 h2 {
+	margin: 100px auto 60px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .head04 h2 {
+	margin: 100px auto 60px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .head00 ul {
+	margin: 0 auto;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: left;
+    width: 500px;
+    font-size: 16px;
+}
+
+.box .head00 li {
+	line-height: 1.8em;
+}
+
+.box .head00 .btn {
+    font-size: 16px;
+}
+
+.box .head01 .leven {
+	margin: 0 auto 80px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .business_list {
+	margin: 0 auto 56px auto;
+	padding: 0 0 0 0;
+  width: 1800px;
+    max-width: 100%;
+  overflow: hidden;
+    text-align: center;
+
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box .business_list li {
+  flex: 1;
+  text-align: center;
+}
+
+.box .business_list li img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.box .business_list li.logo01 img,
+.box .business_list li.logo02 img,
+.box .business_list li.logo03 img {
+    width: 100%;
+    height: auto;
+}
+
+.box .business_list00 {
+	margin: 0 auto;
+	padding: 0 0 0 0;
+  width: 1100px;
+}
+
+.box .business_list01 {
+	margin: 0;
+	padding: 0 0 50px 0;
+  width: 1100px;
+    max-width: 100%;
+  overflow: hidden;
+    text-align: center;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box .business_list02 {
+	margin: 0;
+	padding: 0 0 0 0;
+  width: 1100px;
+    max-width: 100%;
+  overflow: hidden;
+    text-align: center;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box .business_list01 .logo01 ,
+.box .business_list02 .logo03 {
+	margin: 0;
+	padding: 0 50px 0 0;
+}
+
+.box .head01 .insurance {
+	margin: 100px auto 0;
+	padding: 0 0 140px 0;
+	line-height: 1.4em;
+    text-align: center;
+    width: 1100px;
+    border-bottom: 2px dashed #000;
+}
+
+.box .head02 .about-com {
+	margin: 0 auto 0;
+	padding: 0 0 70px 0;
+	line-height: 1.8;
+    text-align: center;
+    font-size: 16px;
+    width: 800px;
+}
+
+.box .head02 #about-box {
+  margin: 0 auto 90px;
+  padding:  0 0 90px 0;
+  line-height: 1.4em;
+  text-align: center;
+  width: 1100px;
+  border-bottom: 2px dashed #000;
+}
+
+.box .head02 .about-add {
+  padding: 20px;
+  border: 1px solid #000;
+  line-height: 2;
+  margin-top: 50px;
+  width: 535px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+/*
+.box .head02 #about-box {
+	margin: 0 auto 90px;
+	padding: 0 0 90px 0;
+	line-height: 1.4em;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px dashed #000;
+}
+
+.box .head02 .about-add {
+    float: left;
+	margin: 0 auto;
+	padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    width: 535px;
+    border: 1px solid #000;
+    line-height: 2;
+}
+
+.box .head02 .about-cut {
+    float: left;
+	margin: 0 auto;
+	padding: 0 60px;
+    text-align: center;
+}
+*/
+
+
+.box .head03 #recruit-box {
+	margin: 0 auto;
+	padding: 0 0 90px 0;
+	line-height: 1.4em;
+    text-align: center;
+    width: 1100px;
+    border-bottom: 2px dashed #000;
+}
+
+.box .head03 .recruit-img {
+  margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.box .head03 .recruit-img01 {
+    float: left;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.box .head03 .recruit-img02 {
+    float: right;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+.box .head03 .recruit-img03 {
+    margin: 0;
+    padding-top: 50px;
+}
+.box .head04 .contact-com {
+	margin: 0 auto 0;
+	padding: 0 0 70px 0;
+	line-height: 1.8;
+    text-align: center;
+    font-size: 16px;
+    width: 800px;
+}
+
+
+.box .head04 .contact-tel {
+  margin: 0 auto 90px;
+    padding: 30px 0;
+    text-align: center;
+    background: #FFF;
+}
+
+.box .head05 #under-menu-box {
+    margin: 30px auto 0;
+    padding: 0;
+	width: 900px;
+}
+
+.box .head05 .under-menu {
+    float: left;
+    margin: 0 auto;
+    padding: 10px 0;
+	width: 178px;
+    border-left: 2px dotted #000;
+    font-size: 18px;
+}
+
+.box .head05 .under-menu02 {
+    float: left;
+    margin: 0 auto;
+    padding: 10px 0;
+	width: 176px;
+    border-left: 2px dotted #000;
+    border-right: 2px dotted #000;
+    font-size: 18px;
+}
+
+.box .address {
+  margin: 0 auto 15px;
+  padding: 25px 20px;
+  max-width: 652px;
+  line-height: 1.8em;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/**
+ *
+ * コンテンツ 事業内容
+ *
+**/
+
+.box .business01 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+
+.box .business02 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+
+.box .business03 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+
+.box .business04 {
+	margin: 0 auto 100px;
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+
+.box .fitness01 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+    width: 100%;
+}
+
+.box .business01 h2 {
+	margin: 100px auto 50px;
+	padding: 0 0 5px 0;
+	line-height: 1.8;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.box .business02 h2 {
+	margin: 100px auto 40px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .business03 h2 {
+	margin: 100px auto 60px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .business04 h2 {
+	margin: 100px auto 60px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+}
+
+.box .fitness01 h2 {
+	margin: 100px auto 50px;
+	padding: 0 0 15px 0;
+	line-height: 1.8;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 35px;
+    width: 1200px;
+    border-bottom: 1px solid #000;
+}
+
+.box .business01 .business01-com {
+	margin: 0 auto 80px;
+	padding: 0 0 5px 0;
+	line-height: 1.4em;
+    text-align: center;
+    font-size: 18px;
+}
+
+.box .business01 .business02-com  {
+	margin: 0 auto 80px;
+	padding: 0 0 5px 0;
+	line-height: 1.8em;
+    text-align: left;
+    font-size: 18px;
+    width: 1150px;
+}
+
+.box .business02 .business02-com {
+	margin: 50px auto 80px;
+	padding: 0 0 5px 0;
+	line-height: 1.8em;
+    text-align: left;
+    font-size: 18px;
+    width: 1150px;
+}
+
+.box .fitness01 .fitness01-com {
+	margin: 50px auto 80px;
+	padding: 0 0 5px 0;
+	line-height: 1.8em;
+    text-align: left;
+    font-size: 18px;
+    width: 1200px;
+}
+
+.box .business01 .philosophy {
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif", "ＭＳ Ｐ明朝", "ＭＳ 明朝";
+	margin: 0 auto 0;
+	padding: 0 0 0 0;
+    text-align: left;
+    font-size: 20px;
+    background: url("../../images/careplan/philosophy-back.jpg") top center no-repeat;
+    width: 1300px;
+}
+
+.box .business01 .philosophy02 ,
+.box .business02 .philosophy02 {
+	margin: 0 auto 0;
+	padding: 0 0 0 0;
+    text-align: left;
+    font-size: 20px;
+    width: 1300px;
+}
+
+.box .philosophy h3 {
+	margin: 0 auto 0;
+	padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.box .philosophy02 h3 {
+	margin: 0 auto 0;
+	padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.box .philosophy03 h3 {
+	margin: 0 auto 0;
+	padding: 30px 0 15px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    width: 1200px;
+}
+
+.box .philosophy02 h4 {
+	margin: 0 auto 0;
+	padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box .philosophy-list {
+	margin: 0 auto 56px auto;
+	padding: 30px 230px 55px 140px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 23px;
+    line-height: 1.8;
+}
+
+.box .philosophy02-list {
+	margin: 56px auto 56px auto;
+	padding: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.box .philosophy03-list {
+	margin: 56px auto 10px auto;
+	padding: 0;
+    text-align: left;
+    font-size: 18px;
+    width: 1200px;
+}
+
+.box .philosophy04-list {
+	margin: 0px auto 56px auto;
+	padding: 0;
+    text-align: left;
+    line-height: 1.6em;
+    font-size: 18px;
+    width: 1200px;
+}
+
+.box .philosophy05-list {
+	margin: 56px auto 56px auto;
+	padding: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.box ol {
+    list-style-type: decimal;
+}
+
+.box .philosophy-list li {
+  text-align: left;
+    text-shadow: white 2px 1px;
+}
+
+.box .philosophy-list li img {
+  margin: 0 auto;
+}
+
+.box .philosophy-list li.logo01 {
+  margin: 0 0 20px 0;
+}
+
+.box .philosophy-list li.logo02 {
+  margin: 0 0 20px 0;
+}
+
+.box .philosophy-list li.logo03 {
+  margin: 0 0 20px 0;
+}
+
+.box .philosophy-list li.logo04 {
+  margin: 0 0 20px 0;
+}
+
+
+.box .trouble-box {
+  margin: 0 auto 20px;
+    padding: 0;
+    width: 1200px;
+}
+
+.box .trouble-box .trouble-left {
+    float: left;
+  margin: 0 0 20px 0;
+    padding: 0;
+    width: 550px;
+}
+
+.box .trouble-box .trouble-right {
+    float: right;
+  margin: 0 0 20px 0;
+    padding: 0;
+    width: 600px;
+}
+
+.box .trouble-box .trouble-arrow {
+  margin: 80px auto;
+    padding: 0;
+}
+
+.box .tservice-box {
+  margin: 0 auto 20px;
+    padding: 0;
+    width: 1200px;
+}
+
+.box .tservice-box .tservice-ttl {
+  margin: 80px auto;
+    padding: 0;
+    font-size: 26px;
+}
+
+.box .tqa-box {
+  margin: 0 auto 20px;
+    padding: 0;
+    width: 1345px;
+    background: url("../../images/careplan/qa-back.jpg") top center no-repeat;
+    line-height: 1.5;
+}
+
+.box .tqa-box .tqa-ttl {
+  margin: 80px auto;
+    padding: 80px 0 15px 0;
+    font-size: 26px;
+    border-bottom: 1px solid #000;
+    width: 1200px;
+}
+
+.box .tqa-box .tqa-q {
+  margin: 0 auto;
+    padding: 30px 0 10px 160px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.box .tqa-box .tqa-a {
+  margin: 0 auto;
+    padding: 0 80px 30px 200px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.box .tqa-box .tqa-a2 {
+  margin: 0 auto;
+    padding: 0 80px 80px 200px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.box #about-style {
+  margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    width: 1200px;
+}
+
+.box #about-style th {
+  margin: 0 auto;
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    width: 30%;
+    color: #8DC21F;
+}
+
+.box #about-style td {
+  margin: 0 auto;
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: left;
+    color: #000;
+}
+
+.box #contact-style {
+  margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    width: 1200px;
+}
+
+.box #contact-style th {
+  margin: 0 auto;
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    width: 20%;
+    color: #000;
+    background: #E6F7C4;
+}
+
+.box #contact-style td {
+  margin: 0 auto;
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: left;
+    color: #000;
+}
+

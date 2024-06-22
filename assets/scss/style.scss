@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+///*------------------------------
+// このscssをcssとして出力をする。
+//------------------------------*/
+
+// setting（基本設定）
+@import "setting/setting";
+
+// mixin（よく使う変数）
+@import "mixin/mixin";
+
+// module（共通のパーツ）
+@import "module/module";
+
+// pages（各ページ毎に）
+@import "pages/pages";

@@ -1,0 +1,68 @@
+///*------------------------------
+// 「mixin」のまとめ
+//------------------------------*/
+
+//01 センタリング（positionはabsolute）
+//------------------------------
+//センタリング（x = 横、y = 縦、xy = 横縦）
+@mixin centering($direction) {
+    position: absolute;
+    
+	@if $direction==xy {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	@else if $direction==x {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@else if $direction==y {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+//02 1番目の要素だけ、1番目の要素以外
+//------------------------------
+@mixin first {&:first-child {@content;}}
+@mixin not-first {&:not(:first-child) {@content;}}
+
+//03 最後の要素だけ、最後の要素以外
+//------------------------------
+@mixin last {&:last-child {@content;}}
+@mixin not-last {&:not(:last-child) {@content;}}
+
+//04 トランジション設定
+//------------------------------
+@mixin transition($transition-type: ease) {
+	transition-duration: .15s;
+	transition-property: all;
+
+	//linear
+	@if $transition-type == "linear" {
+		transition-timing-function: linear;
+	}
+
+	//ease
+	@else if $transition-type == "ease" {
+		transition-timing-function: ease;
+	}
+
+	//ease-in
+	@else if $transition-type == "ease-in" {
+		transition-timing-function: ease-in;
+	}
+
+	//ease-out
+	@else if $transition-type == "ease-out" {
+		transition-timing-function: ease-out;
+	}
+}
+
+//05 マージン、左右センタリング
+//------------------------------
+@mixin margin-center {
+	margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="description" content="デイサービス・ケアマネージャー・訪問介護なら株式会社東海レーベン(愛知県 東海市/大府市/知多市/東浦町)"/>
+<meta name="keywords" content=""/>
+<title>デイサービス・ケアマネージャー・訪問介護｜株式会社東海レーベン</title>
+<link rel="stylesheet" href="common/css/base.css">
+<link rel="stylesheet" href="common/css/common.css">
+<link rel="stylesheet" href="common/css/content.css">
+<link rel="stylesheet" href="common/css/layout.css">
+<link rel="stylesheet" href="common/css/responsive.css">
+</head>
+<body>
+<div id="wrapper">
+	<!-- ヘッダー開始 -->
+	<header id="header">
+    <div class="head-line"></div>
+    <div id="head-box">
+    <h1 class="pc_disp"><a href="./"><img src="common/images/head-logo.png" width="494" height="86" alt="デイサービス、居宅・訪問介護なら株式会社東海レーベン"></a><span class="insta"><a href="https://www.instagram.com/leven_kaede/" target="_blank"><img src="common/images/icon_head_insta.png" width="35" height="60" alt=""/></a></span></h1>
+    <h1 class="sp_disp"><a href="./"><img src="common/images/head-logo.png" width="494" height="86" alt="デイサービス、居宅・訪問介護なら株式会社東海レーベン"></a><span class="insta"><a href="https://www.instagram.com/leven_kaede/" target="_blank"><img src="common/images/icon_head_insta_sp.png" width="35" height="76" alt=""/></a></span></h1>
+    <div id="head-tel"><img src="common/images/head-tel.png" width="386" height="120" alt="052-627-3000"/></div>
+    <div style="clear: both"></div>
+    <div id="head-menu-box">
+        <div class="head-menu"><a href="./">ホーム</a></div>
+        <div class="head-menu"><a href="#a01">事業内容</a></div>
+        <div class="head-menu"><a href="about.html">会社概要</a></div>
+        <div class="head-menu"><a href="staff.html">採用情報</a></div>
+        <div class="head-menu02"><a href="contact.html">お問い合わせ</a></div>
+    <div style="clear: both"></div>
+    </div>
+    </div>
+	</header>
+	<!-- ヘッダー終了 -->
+	<!-- コンテンツ開始 -->
+	<main id="content" class="clearfix">
+    <article class="box">
+      <p class="intro"><img src="images/index/top-img.jpg" alt="一人ひとりの人生に寄り添った介護を"></p>
+      <div class="head00">
+        <h2><img src="images/index/h2-blog-content.png" width="571" height="52" alt="お知らせ＆スタッフブログ"/></h2>
+<?php
+	$rssdata = simplexml_load_file("https://toukai-leven.jp/blog/?feed=rss2");
+
+	// 読み込み件数を決定する
+	$num_of_data = 5;
+
+	//出力内容の初期化
+	$outdata = "";
+
+	//設定した読み込み件数分だけ取得を繰り返す
+	for ($i=0; $i<$num_of_data; $i++){
+		$entry = $rssdata->channel->item[$i]; //記事1個取得
+		$date = date("Y年 m月 d日", strtotime($entry->pubDate));
+		$title = $entry->title; //タイトル取得
+		$link = $entry->link; //リンクURL取得
+
+		//出力内容に日付けを入れる
+		$outdata .= '<li>' . $date;
+
+		//出力内容にリンク付きでタイトルを入れる
+		$outdata .= '　<a href="' . $link . '"><span>' . $title . '</span></a></li>';
+	}
+
+	echo '<ul>' . $outdata . '</ul>'; //実行結果を出力する
+?>
+
+<br><a class="btn" href="https://toukai-leven.jp/blog/" target="_blank"><span>お知らせ＆スタッフブログ一覧はこちら</span></a>
+      </div>
+      
+      <div class="head01" id="a01">
+        <h2><img src="images/index/h2-business-content.png" width="336" height="52" alt="事業内容"/></h2>
+        <div class="leven"><img src="images/index/content-leven.png" width="637" height="58" alt="東海レーベン"/></div>
+          
+      <div class="business_list00">
+      <div class="business_list01">
+        <div class="logo01"><a href="careplan.html"><img src="images/index/kaede01.png" alt="ケアプラン楓　居宅介護支援"></a></div>
+        <div class="logo02"><a href="fitness.html"><img src="images/index/kaede02.png" alt="フィットネスかえで　デイサービス"></a></div>
+      </div>
+          
+      <div class="business_list02">
+        <div class="logo03"><a href="helper.html"><img src="images/index/kaede03.png" alt="ヘルパーステーションかえで　訪問介護"></a></div>
+        <div class="logo04"><a href="KAEDE_CARE_GARDEN.pdf" target="_blank"><img src="images/index/kaede04.png" alt="KAEDE CARE GARDEN 桜ケ丘"></a></div>
+      </div>
+      </div>
+          
+        <div class="insurance"><a href="insurance.html"><img src="images/index/kaigo-insurance.png" width="1100" height="68" alt="介護認定の手続きはお済ですか？"/></a></div>
+      </div>
+      
+      <div class="head02" id="a02">
+        <h2><img src="images/index/h2-about-content.png" width="336" height="52" alt="会社概要"/></h2>
+        <div class="about-com">私たち株式会社東海レーベンは、地域密着でお客様一人ひとりに細やかな対応を心がけ<br>
+皆様の健やかで安心できる暮らしをお手伝いします。</div>
+      <div id="about-box" style="clear: both;">
+        <div class="about-cut"><img src="images/index/about-cut.png" width="361" height="241" alt=""/></div>
+        <div class="about-add">
+            <p class="bold pb15">株式会社東海レーベン</p>〒476-0015　愛知県東海市東海町２丁目6-5　かえでビル1F<br>
+TEL 052-627-3000 FAX 052-627-3001<br>
+営業時間　9:00～17:00　定休日　土曜日・日曜日<span class="font12">&nbsp;※祝日は営業</span>
+                        <p class="pt15"><a href="about.html">MORE &gt;&gt;</a></p>
+        </div>
+    <div style="clear: both"></div>
+      </div>
+      </div>
+      
+      <div class="head03" id="a03">
+        <h2><img src="images/index/h2-recruit-content.png" width="336" height="52" alt="採用情報"/></h2>
+      <div id="recruit-box">
+      <div class="recruit-img01"><a href="staff.html"><img src="images/index/recruit-img01.png" width="628" height="475" alt="スタッフインタビュー" /></a></div>
+      <div class="recruit-img02"><a href="staff.html"><img src="images/index/recruit-img02.png" width="432" height="141" alt="スタッフインタビュー" /></a>
+          <div class="recruit-img03"><a href="https://en-gage.net/tokai-leben_saiyo" target="_blank"><img src="https://en-gage.net/imageFile_new/company/widget_banner_B_pc_468×60.png" alt="engage" border="0"></a></div></div>
+      <div style="clear: both;"></div>
+      </div>
+      </div>
+      
+      
+      <div class="head04" id="a04">
+        <h2><img src="images/index/h2-contact-content.png" width="352" height="53" alt="お問い合わせ"/></h2>
+        <div class="contact-com">介護・福祉に関することや施設の見学など、お気軽にご相談・お問い合わせください。</div>
+      <div class="contact-tel"><a href="contact.html"><img src="images/index/contact-tel.png" width="1100" height="75" alt="052-627-3000 株式会社東海レーベン"/></a></div>
+      </div>
+      
+      
+      <div class="head05">
+    <div id="under-menu-box">
+        <div class="under-menu"><a href="./">ホーム</a></div>
+        <div class="under-menu"><a href="#a01">事業内容</a></div>
+        <div class="under-menu"><a href="about.html">会社概要</a></div>
+        <div class="under-menu"><a href="staff.html">採用情報</a></div>
+        <div class="under-menu02"><a href="contact.html">お問い合わせ</a></div>
+    <div style="clear: both"></div>
+    </div>
+      </div>
+      
+
+    </article>
+	</main>
+	<!-- コンテンツ終了 -->
+	<!-- フッター開始 -->
+	<footer id="footer">
+		<div class="footer-box">
+		<div class="wrap clearfix">
+      <p class="name pc_disp"><img src="common/images/foot-logo.png" width="252" height="164" alt="株式会社東海レーベン">　<a href="https://www.instagram.com/leven_kaede/" target="_blank"><img src="common/images/icon_insta.png" width="30" height="164" alt="株式会社東海レーベン　Instagram"/></a></p>
+      <p class="name sp_disp"><img src="common/images/foot-logo.png" width="252" height="164" alt="株式会社東海レーベン">　<span class="name02"><a href="https://www.instagram.com/leven_kaede/" target="_blank"><img src="common/images/icon_insta_sp.png" alt="株式会社東海レーベン　Instagram" width="30" height="45"/></a></span></p>
+      
+      <p class="tel">〒476-0015　愛知県東海市東海町２丁目6-5 かえでビル1F<br>
+TEL 052-627-3000 　　FAX 052-627-3001</p>
+      <p class="copy">Copyright &copy; Toukaileven Inc. All rights reserved.</p>
+		</div>
+		</div>
+	</footer>
+	<!-- フッター終了 -->
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74285612-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-74285612-2');
+</script>
+
+</body>
+</html>

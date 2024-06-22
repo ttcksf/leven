@@ -1,0 +1,17 @@
+form#mailformpro input {
+	padding: 3px;
+	font-size: 14px;
+	vertical-align: middle;
+    width: 85%;
+}
+form#mailformpro textarea {
+	padding: 3px;
+	font-size: 14px;
+	vertical-align: middle;
+    width: 85%;
+    height: 100px;
+}
+form#mailformpro select {
+	vertical-align: middle;
+	font-size: 14px;
+}

@@ -1,0 +1,37 @@
+///*------------------------------
+// 基礎設定
+//------------------------------*/
+
+// ブレイクポイント
+$breakpoints: (
+    "pc": "screen and (min-width: 769px)",
+    "sp": "screen and (max-width: 768px)",
+) !default;
+
+// 初期値:PC表示(769px～)
+@mixin mq($breakpoint: pc) {
+    @media #{map-get($breakpoints,$breakpoint)} {
+        @content;
+    }
+}
+
+// 画像格納ディレクトリ
+$imgDir: "../img/";
+
+///*------------------------------
+// bodyの設定
+//------------------------------*/
+body {
+    background-color: $color-bg-base;
+    color: $color-text;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif !important;
+    font-weight: 400;
+
+    font-size: 20px; //20px
+    line-height: 1.67; //行間設定
+
+    //スマホ
+    @include mq(sp) {
+        font-size: 16px; //16px
+    }
+}
