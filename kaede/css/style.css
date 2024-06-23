@@ -6,12 +6,20 @@
 }
 body {
 }
-.sp-none {
+.sp {
   display: none;
 }
 @media (max-width: 428px) {
-  .sp-none {
+  .sp {
     display: block;
+  }
+}
+.pc {
+  display: block;
+}
+@media (max-width: 767px) {
+  .pc {
+    display: none;
   }
 }
 .main {
@@ -377,6 +385,7 @@ body {
     width: 100%;
     height: auto;
     margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 .place-wrapper table {
@@ -416,10 +425,70 @@ body {
   padding-bottom: 10px;
 }
 @media (max-width: 767px) {
+  .place-wrapper tr th,
+  .place-wrapper tr td {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .place-wrapper tr th {
+  }
   .place-wrapper tr td {
     font-size: 16px;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .place-wrapper tr td:last-chid {
+    margin-bottom: 0;
   }
 }
 .place-wrapper tr td rt {
   text-align: center;
+}
+/* photos */
+.photos {
+  width: 100%;
+  max-width: 1197px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .photos {
+    max-width: 100%;
+  }
+}
+.photo {
+  width: calc(25% - 20px * 3 / 4);
+  margin-right: 20px;
+}
+.photo:nth-child(4n) {
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  .photo {
+    width: calc(50% - 20px * 1 / 2);
+    margin-right: 20px;
+  }
+  .photo:nth-child(4n) {
+    margin-right: 20px;
+  }
+  .photo:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 428px) {
+  .photo {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .photo:last-child {
+    margin-bottom: 0;
+  }
+}
+.photo img {
+  width: 100%;
+  aspect-ratio: 280 / 187;
+  object-fit: cover;
 }
