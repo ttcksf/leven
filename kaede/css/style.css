@@ -6,6 +6,7 @@
 }
 body {
 }
+
 .sp {
   display: none;
 }
@@ -563,4 +564,144 @@ body {
   .root tr td {
     padding-left: 0;
   }
+}
+/* plan */
+.plan {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .plan {
+    max-width: 100%;
+  }
+}
+.plan h1 {
+  font-size: 40px;
+  line-height: calc(53.86 / 40);
+  letter-spacing: 0.1em;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .plan h1 {
+    font-size: 24px;
+    line-height: calc(53.86 / 40);
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+  }
+}
+.plan p {
+  font-size: 24px;
+  line-height: calc(21 / 24);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .plan p {
+    font-size: 16px;
+    line-height: calc(39.69 / 20);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+}
+.plan span {
+  font-size: 20px;
+  line-height: calc(21 / 20);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .plan span {
+    font-size: 16px;
+    line-height: calc(39.69 / 20);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+}
+.table {
+  overflow-x: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+.table table {
+  border: 1px solid #47372b;
+  margin-bottom: 70px;
+  width: 1106px;
+}
+@media (max-width: 767px) {
+  .plan table {
+    margin-bottom: 35px;
+  }
+}
+
+.table tr th {
+  padding: 25px 30px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: calc(21 / 20);
+  font-weight: 400;
+  width: 218px;
+  min-width: 218px;
+  text-align: left;
+  vertical-align: middle;
+  background: #f9dcdc;
+  border: 1px solid #47372b;
+  height: 70px;
+}
+@media (max-width: 1200px) {
+  .table tr th {
+    text-align: center;
+  }
+}
+.table tr th span,
+.table tr td span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.table tr th p {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 1200px) {
+  .table tr th p {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .table tr th p {
+    text-align: center;
+    margin: 0;
+  }
+}
+.table tr td {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  line-height: calc(33.05 / 18);
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+  padding: 25px 60px 25px 40px;
+  border: 1px solid #47372b;
+  width: 393px;
+  min-width: 393px;
+}
+.table tr td.content {
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  line-height: calc(22 / 15);
+  font-weight: 400;
+  padding: 25px 20px;
+  width: 495px;
+  min-width: 495px;
+}
+.table.second tr td.light {
+  padding: 0 60px 0 40px;
+}
+.table.second tr th.total {
+  text-align: center;
 }
