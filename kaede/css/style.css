@@ -705,3 +705,18 @@ body {
 .table.second tr th.total {
   text-align: center;
 }
+.table.second tr td span {
+  font-size: 13px;
+}
+.table.third tr th {
+  width: 109px;
+  min-width: 109px;
+}
+.table.third tr th.subscribe {
+  padding: 10px;
+  text-align: center;
+  line-height: calc(45.35 / 20);
+}
+.table.third tr th.set {
+  padding: 10px;
+}
