@@ -72,6 +72,12 @@ body {
     background: url("../img/head-bg.png") no-repeat center center / contain;
   }
 }
+@media (max-width: 428px) {
+  .head {
+    padding: 30px 0 15px;
+    background: url("../img/head-bg-sp.png") no-repeat center center / cover;
+  }
+}
 .head h1 {
   font-size: 52px;
   line-height: calc(87 / 52);
@@ -294,6 +300,7 @@ body {
 }
 .servicies table {
   width: 100%;
+  background: #fff;
 }
 @media (max-width: 428px) {
   .servicies table {
@@ -333,6 +340,7 @@ body {
   width: 383px;
   text-align: left;
   vertical-align: middle;
+  color: #ff386b;
 }
 @media (max-width: 1200px) {
   .servicies tr th {
@@ -352,7 +360,6 @@ body {
 @media (max-width: 428px) {
   .servicies tr th {
     border-bottom: 1px dashed #333;
-    color: #ff386b;
   }
 }
 .servicies tr td {
@@ -540,6 +547,10 @@ body {
 .photo {
   width: calc(25% - 20px * 3 / 4);
   margin-right: 20px;
+  margin-bottom: 35px;
+}
+.photo:nth-child(n + 5) {
+  margin-bottom: 0;
 }
 .photo img {
   width: 100%;
@@ -706,8 +717,14 @@ body {
   }
 }
 @media (max-width: 428px) {
-  .plan p {
+  .first p {
     margin-left: 40%;
+  }
+  .second p,
+  .third p {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 25px 0;
   }
 }
 .plan span {
@@ -746,6 +763,7 @@ body {
 @media (max-width: 428px) {
   .plan table {
     width: 100%;
+    margin-bottom: 0;
   }
 }
 .table tr th {
@@ -753,7 +771,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.1em;
   line-height: calc(21 / 20);
-  font-weight: 400;
+  font-weight: 600;
   width: 218px;
   min-width: 218px;
   text-align: left;
@@ -801,7 +819,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   line-height: calc(33.05 / 18);
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   vertical-align: middle;
   padding: 25px 60px 25px 40px;
@@ -821,6 +839,8 @@ body {
     line-height: calc(24 / 16);
     letter-spacing: 0.17em;
     background: #fff;
+    text-align: center;
+    padding: 15px 0;
   }
   .table tr td.center {
     text-align: center;
@@ -842,13 +862,33 @@ body {
     display: block;
     min-width: auto;
     border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .third tr td.content {
+    border-bottom: 1px solid #c0b9b4;
+  }
+  .third tr:last-child td.content {
+    border-bottom: 0px solid #c0b9b4;
   }
 }
 .table.second tr td.light {
   padding: 0 60px 0 40px;
 }
-.table.second tr th.total {
+@media (max-width: 428px) {
+  .table.second tr td.light {
+    padding: 10px 0;
+  }
+}
+.table.second tr td.total {
   text-align: center;
+}
+@media (max-width: 428px) {
+  .table.second tr td.total {
+    padding: 0 0 45px 0;
+    font-weight: 600;
+  }
 }
 .table.second tr td span {
   font-size: 13px;
@@ -856,6 +896,12 @@ body {
 .table.third tr th {
   width: 109px;
   min-width: 109px;
+}
+@media (max-width: 428px) {
+  .table.third tr th {
+    width: 100%;
+    min-width: auto;
+  }
 }
 .table.third tr th.subscribe {
   padding: 10px;
@@ -871,16 +917,31 @@ body {
   padding: 25px 0;
   margin-bottom: 90px;
 }
+@media (max-width: 428px) {
+  .other {
+    border: 0px solid #47372b;
+    background: #fff;
+    padding: 35px 0;
+    margin-bottom: 0;
+  }
+}
 .other p {
   text-align: center;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: calc(21 / 18);
+  letter-spacing: 0.17em;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
   .other p {
     font-size: 16px;
+  }
+}
+@media (max-width: 428px) {
+  .other p {
+    font-size: 20px;
+    line-height: calc(21 / 20);
   }
 }
 .other .lists {
@@ -897,7 +958,8 @@ body {
 @media (max-width: 428px) {
   .other .lists {
     display: block;
-    width: 90%;
+    width: 100%;
+    padding: 0 15px;
   }
 }
 .other .lists div:last-child {
@@ -910,4 +972,11 @@ body {
 }
 .other .lists div p {
   text-align: left;
+}
+@media (max-width: 428px) {
+  .other .lists div p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
 }
