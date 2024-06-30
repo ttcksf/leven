@@ -930,7 +930,6 @@ body {
   font-size: 18px;
   font-weight: 600;
   line-height: calc(21 / 18);
-  letter-spacing: 0.17em;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
@@ -978,5 +977,143 @@ body {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
+  }
+}
+/* cpa  */
+.cpa {
+  width: 100%;
+  min-height: 223px;
+  background: #ff516e;
+  padding: 65px 0 50px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .cpa {
+    display: none;
+  }
+}
+.cpa-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+}
+@media (max-width: 1500px) {
+  .cpa-wrapper {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .cpa-wrapper {
+    max-width: 90%;
+  }
+}
+.cpa-left {
+  width: 63%;
+  margin-right: 8%;
+}
+@media (max-width: 1200px) {
+  .cpa-left {
+    margin-right: 5%;
+  }
+}
+.cpa-left p {
+  font-size: 20px;
+  font-weight: 500;
+  lettr-spacing: 0.05em;
+  line-height: calc(35 / 20);
+  color: #fff;
+  text-align: left;
+}
+@media (max-width: 1300px) {
+  .cpa-left p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1100px) {
+  .cpa-left p {
+    font-size: 16px;
+  }
+}
+.cpa-left div {
+  display: flex;
+  align-items: start;
+  margin-top: 25px;
+}
+.cpa-left div img {
+  display: inline-block;
+  width: 59%;
+  margin-right: 9%;
+  height: auto;
+  aspect-ratio: 7.7;
+}
+.cpa-left div p {
+  font-size: 22px;
+  line-height: calc(28 / 22);
+  letter-spacing: 0.05em;
+  color: #fff;
+  font-weight: 500;
+  text-align: left;
+}
+@media (max-width: 1300px) {
+  .cpa-left div p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .cpa-left div p {
+    font-size: 18px;
+  }
+}
+.cpa-right {
+  width: 29%;
+}
+.cpa-right img {
+  display: inline-block;
+  width: 100%;
+  aspect-ratio: 4.5;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .cpa-sp {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .cpa-sp {
+    display: block;
+    width: 100%;
+    background: #ff516e;
+    padding: 45px 0 60px;
+  }
+  .cpa-sp p {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+  }
+  .cpa-sp p.first {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: calc(22 / 14);
+  }
+  .cpa-sp p.second {
+    font-size: 22px;
+    margin: 15px 0 40px;
+  }
+  .cpa-sp img {
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 428px) {
+  .cpa-sp p.first {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .cpa-sp p.second {
+    font-size: 16px;
+    margin: 15px 0 40px;
   }
 }
