@@ -83,7 +83,7 @@ body {
   line-height: calc(87 / 52);
   letter-spacing: 0.1em;
   margin-bottom: 60px;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media (max-width: 767px) {
   .head h1 {
@@ -97,7 +97,7 @@ body {
   font-size: 20px;
   line-height: calc(39.69 / 20);
   letter-spacing: 0.1em;
-  font-weight: 500;
+  font-weight: 400;
 }
 @media (max-width: 767px) {
   .head p {
@@ -310,13 +310,24 @@ body {
 .servicies tr {
   border-left: 1.4px solid #47372b;
   border-right: 1.4px solid #47372b;
-  border-bottom: 1.4px dashed #47372b;
+  /* border-bottom: 1.4px dashed #47372b; */
+  background-image: linear-gradient(
+    to right,
+    #47372b,
+    #47372b 5px,
+    transparent 2px,
+    transparent 8px
+  ); /* 幅2の線を作る */
+  background-size: 8px 1.4px; /* グラデーションの幅・高さを指定 */
+  background-position: left bottom; /* 背景の開始位置を指定 */
+  background-repeat: repeat-x;
 }
 .servicies tr.top {
   border-top: 1.4px solid #47372b;
 }
 .servicies tr.last {
   border-bottom: 1.4px solid #47372b;
+  background: none;
 }
 @media (max-width: 428px) {
   .servicies tr {
@@ -332,7 +343,7 @@ body {
   }
 }
 .servicies tr th {
-  padding: 50px 40px;
+  padding: 50px 80px;
   font-size: 28px;
   letter-spacing: 0.2em;
   line-height: calc(36 / 28);
@@ -449,7 +460,6 @@ body {
 }
 .place-wrapper table {
   width: calc(50% - 30px * 1 / 2);
-  height: 291px;
   text-align: left;
 }
 @media (max-width: 767px) {
@@ -639,7 +649,7 @@ body {
 }
 .root tr td {
   padding-left: 50px;
-  font-weight: 500;
+  font-weight: 400;
   padding-bottom: 25px;
 }
 .root tr:last-child td {
@@ -733,7 +743,6 @@ body {
   letter-spacing: 0.1em;
   font-weight: 500;
   text-align: left;
-  margin-left: 15px;
   margin-bottom: 15px;
 }
 @media (max-width: 767px) {
@@ -741,6 +750,7 @@ body {
     font-size: 16px;
     line-height: calc(39.69 / 20);
     letter-spacing: 0.1em;
+    margin-left: 15px;
     margin-bottom: 8px;
   }
 }
@@ -771,7 +781,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.1em;
   line-height: calc(21 / 20);
-  font-weight: 600;
+  font-weight: 400;
   width: 218px;
   min-width: 218px;
   text-align: left;
@@ -819,7 +829,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   line-height: calc(33.05 / 18);
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
   vertical-align: middle;
   padding: 25px 60px 25px 40px;
@@ -881,7 +891,7 @@ body {
     padding: 10px 0;
   }
 }
-.table.second tr td.total {
+.table.second tr th.total {
   text-align: center;
 }
 @media (max-width: 428px) {
