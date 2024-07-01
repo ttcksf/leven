@@ -751,14 +751,17 @@ body {
     line-height: calc(39.69 / 20);
     letter-spacing: 0.1em;
     margin-bottom: 8px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .plan .first p {
+    margin-left: 105px;
   }
 }
 @media (max-width: 428px) {
-  .first p {
-    margin-left: 40%;
-  }
-  .second p,
-  .third p {
+  .plan .second p,
+  .plan .third p {
     text-align: center;
     margin-bottom: 0;
     padding: 25px 0;
@@ -795,6 +798,7 @@ body {
   .plan table {
     margin-bottom: 35px;
     border: 0px solid #47372b;
+    width: 100%;
   }
 }
 @media (max-width: 428px) {
@@ -837,16 +841,19 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .table tr th {
+    width: 100%;
+    display: block;
+    min-width: auto;
+  }
   .table tr th p {
     text-align: center;
     margin: 0;
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .table tr th {
-    width: 100%;
     max-width: 100%;
-    display: block;
     font-size: 16px;
     border: none;
     border-bottom: 1px solid #c0b9b4;
@@ -864,12 +871,15 @@ body {
   width: 393px;
   min-width: 393px;
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .table tr td {
     width: 100%;
-    max-width: 100%;
     display: block;
     min-width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .table tr td {
     border: none;
     border-bottom: 1px solid #c0b9b4;
     font-size: 16px;
@@ -892,16 +902,22 @@ body {
   width: 495px;
   min-width: 495px;
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .table tr td.content {
     width: 100%;
-    max-width: 100%;
     display: block;
     min-width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .table tr td.content {
     border: none;
     text-align: left;
     font-size: 16px;
     font-weight: 500;
+  }
+  .table tr td.content span {
+    margin-left: 0;
   }
   .third tr td.content {
     border-bottom: 1px solid #c0b9b4;
@@ -913,7 +929,7 @@ body {
 .table.second tr td.light {
   padding: 0 60px 0 40px;
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .table.second tr td.light {
     padding: 10px 0;
   }
@@ -921,10 +937,12 @@ body {
 .table.second tr th.total {
   text-align: center;
 }
-@media (max-width: 428px) {
-  .table.second tr td.total {
+@media (max-width: 767px) {
+  .table.second tr th.total {
     padding: 0 0 45px 0;
     font-weight: 600;
+    background: #fff;
+    border-bottom: none;
   }
 }
 .table.second tr td span {
@@ -934,9 +952,10 @@ body {
   width: 109px;
   min-width: 109px;
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .table.third tr th {
     width: 100%;
+    display: block;
     min-width: auto;
   }
 }
@@ -945,8 +964,19 @@ body {
   text-align: center;
   line-height: calc(45.35 / 20);
 }
+@media (max-width: 767px) {
+  .table.third tr th.subscribe {
+    line-height: calc(21 / 16);
+    padding: 25px 30px;
+  }
+}
 .table.third tr th.set {
   padding: 10px;
+}
+@media (max-width: 767px) {
+  .table.third tr th.set {
+    padding: 25px 30px;
+  }
 }
 .other {
   width: 100%;
@@ -954,7 +984,7 @@ body {
   padding: 25px 0;
   margin-bottom: 90px;
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .other {
     border: 0px solid #47372b;
     background: #fff;
