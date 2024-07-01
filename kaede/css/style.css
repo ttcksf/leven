@@ -505,6 +505,10 @@ body {
     font-size: 16px;
     letter-spacing: 0.17em;
     line-height: calc(21 / 16);
+    min-width: 97px;
+  }
+  .place-wrapper table tr:first-child th {
+    min-width: auto;
   }
 }
 .place-wrapper table tr td {
@@ -521,7 +525,7 @@ body {
 }
 @media (max-width: 428px) {
   .place-wrapper table tr td {
-    padding-left: 20px;
+    padding-left: 67px;
     padding-top: 22px;
     padding-bottom: 22px;
     padding-right: 20px;
@@ -529,13 +533,37 @@ body {
     letter-spacing: 0.17em;
     line-height: calc(21 / 16);
   }
+  .place-wrapper table tr:nth-child(1) td {
+    padding-left: 42px;
+    padding-right: 18px;
+  }
+  .place-wrapper table tr:nth-child(2) td {
+    padding-right: 18px;
+  }
   .place-wrapper table tr:nth-child(3) td,
   .place-wrapper table tr:nth-child(4) td,
   .place-wrapper table tr:nth-child(5) td {
     text-align: right;
   }
 }
-
+@media (max-width: 420px) {
+  .place-wrapper table tr td {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .place-wrapper table tr:first-child td {
+    padding-left: 22px;
+  }
+}
+@media (max-width: 368px) {
+  .place-wrapper table tr:first-child td {
+    padding-left: 0px;
+  }
+  .place-wrapper table tr td span {
+    font-size: 13px;
+  }
+}
 /* photos */
 .photos {
   width: 100%;
@@ -651,6 +679,9 @@ body {
   padding-bottom: 0px;
 }
 @media (max-width: 767px) {
+  .root table {
+    width: 100%;
+  }
   .root tr th,
   .root tr td {
     display: block;
@@ -659,6 +690,7 @@ body {
     font-size: 16px;
     line-height: calc(24 / 16);
     letter-spacing: 0.17em;
+    text-align: center;
   }
   .root tr th {
     padding-bottom: 15px;
