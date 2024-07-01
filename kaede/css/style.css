@@ -310,7 +310,6 @@ body {
 .servicies tr {
   border-left: 1.4px solid #47372b;
   border-right: 1.4px solid #47372b;
-  /* border-bottom: 1.4px dashed #47372b; */
   background-image: linear-gradient(
     to right,
     #47372b,
@@ -461,6 +460,25 @@ body {
 .place-wrapper table {
   width: calc(50% - 30px * 1 / 2);
 }
+@media (max-width: 767px) {
+  .place-wrapper table {
+    width: 100%;
+  }
+}
+@media (max-width: 428px) {
+  .place-wrapper table tr {
+    background-image: linear-gradient(
+      to right,
+      #47372b,
+      #47372b 5px,
+      transparent 2px,
+      transparent 8px
+    ); /* 幅2の線を作る */
+    background-size: 8px 1.4px; /* グラデーションの幅・高さを指定 */
+    background-position: left bottom; /* 背景の開始位置を指定 */
+    background-repeat: repeat-x;
+  }
+}
 .place-wrapper table tr th {
   text-align: left;
   font-size: 20px;
@@ -474,6 +492,21 @@ body {
 .place-wrapper table tr:nth-child(2) th {
   vertical-align: bottom;
 }
+@media (max-width: 767px) {
+  .place-wrapper table tr th {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 428px) {
+  .place-wrapper table tr th {
+    padding-left: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 16px;
+    letter-spacing: 0.17em;
+    line-height: calc(21 / 16);
+  }
+}
 .place-wrapper table tr td {
   text-align: left;
   font-size: 20px;
@@ -485,6 +518,22 @@ body {
 }
 .place-wrapper table tr td span {
   font-size: 14px;
+}
+@media (max-width: 428px) {
+  .place-wrapper table tr td {
+    padding-left: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 20px;
+    font-size: 16px;
+    letter-spacing: 0.17em;
+    line-height: calc(21 / 16);
+  }
+  .place-wrapper table tr:nth-child(3) td,
+  .place-wrapper table tr:nth-child(4) td,
+  .place-wrapper table tr:nth-child(5) td {
+    text-align: right;
+  }
 }
 
 /* photos */
