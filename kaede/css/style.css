@@ -105,6 +105,7 @@ body {
     line-height: calc(39.69 / 20);
     letter-spacing: 0.1em;
     text-align: left;
+    font-weight: 500;
   }
 }
 /* points  */
@@ -169,6 +170,7 @@ body {
   .point p {
     font-size: 16px;
     line-height: calc(24 / 16);
+    font-weight: 500;
   }
 }
 /* policies  */
@@ -219,6 +221,7 @@ body {
   .policy1 p {
     font-size: 16px;
     line-height: calc(21 / 16);
+    font-weight: 500;
   }
 }
 .policy2 {
@@ -254,6 +257,7 @@ body {
   .policy2 p {
     font-size: 16px;
     line-height: calc(21 / 16);
+    font-weight: 500;
   }
 }
 /* servicies */
@@ -302,11 +306,7 @@ body {
   width: 100%;
   background: #fff;
 }
-@media (max-width: 428px) {
-  .servicies table {
-    background: #fff;
-  }
-}
+
 .servicies tr {
   border-left: 1.4px solid #47372b;
   border-right: 1.4px solid #47372b;
@@ -328,11 +328,12 @@ body {
   border-bottom: 1.4px solid #47372b;
   background: none;
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .servicies tr {
     border-left: 0px solid #47372b;
     border-right: 0px solid #47372b;
     border-bottom: 0px dashed #47372b;
+    background: none;
   }
   .servicies tr.top {
     border-top: 0px solid #47372b;
@@ -365,13 +366,19 @@ body {
     padding: 15px 10px;
     width: 100%;
     text-align: center;
+    background-image: linear-gradient(
+      to right,
+      #47372b,
+      #47372b 5px,
+      transparent 2px,
+      transparent 8px
+    ); /* 幅2の線を作る */
+    background-size: 8px 1.4px; /* グラデーションの幅・高さを指定 */
+    background-position: left bottom; /* 背景の開始位置を指定 */
+    background-repeat: repeat-x;
   }
 }
-@media (max-width: 428px) {
-  .servicies tr th {
-    border-bottom: 1px dashed #333;
-  }
-}
+
 .servicies tr td {
   padding: 30px 60px;
   font-size: 18px;
@@ -388,7 +395,7 @@ body {
     line-height: calc(24 / 16);
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .servicies tr:last-child td {
     margin-bottom: 25px;
   }
@@ -467,16 +474,7 @@ body {
 }
 @media (max-width: 428px) {
   .place-wrapper table tr {
-    background-image: linear-gradient(
-      to right,
-      #47372b,
-      #47372b 5px,
-      transparent 2px,
-      transparent 8px
-    ); /* 幅2の線を作る */
-    background-size: 8px 1.4px; /* グラデーションの幅・高さを指定 */
-    background-position: left bottom; /* 背景の開始位置を指定 */
-    background-repeat: repeat-x;
+    border-bottom: 1.4px solid #c0b9b4;
   }
 }
 .place-wrapper table tr th {
@@ -697,6 +695,7 @@ body {
   }
   .root tr td {
     padding-left: 0;
+    font-weight: 500;
   }
 }
 @media (max-width: 428px) {
@@ -709,7 +708,7 @@ body {
 /* plan */
 .plan {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1115px;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
@@ -741,7 +740,7 @@ body {
   font-size: 24px;
   line-height: calc(21 / 24);
   letter-spacing: 0.1em;
-  font-weight: 600;
+  font-weight: 500;
   text-align: left;
   margin-bottom: 15px;
 }
@@ -752,6 +751,7 @@ body {
     letter-spacing: 0.1em;
     margin-bottom: 8px;
     text-align: center;
+    font-weight: 600;
   }
 }
 @media (max-width: 767px) {
@@ -957,6 +957,10 @@ body {
   min-width: 109px;
 }
 @media (max-width: 767px) {
+  .table.second tr td span {
+    font-size: 16px;
+    font-weight: 500;
+  }
   .table.third tr th {
     width: 100%;
     display: block;
@@ -1042,6 +1046,7 @@ body {
 }
 .other .lists div p {
   text-align: left;
+  margin-bottom: 10px;
 }
 @media (max-width: 428px) {
   .other .lists div p {

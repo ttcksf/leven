@@ -103,29 +103,29 @@
               />
             </h2>
             <?php
-	$rssdata = simplexml_load_file("https://toukai-leven.jp/blog/?feed=rss2");
+	            $rssdata = simplexml_load_file("https://toukai-leven.jp/blog/?feed=rss2");
 
-	// 読み込み件数を決定する
-	$num_of_data = 5;
+	            // 読み込み件数を決定する
+	            $num_of_data = 5;
 
-	//出力内容の初期化
-	$outdata = "";
+	            //出力内容の初期化
+	            $outdata = "";
 
-	//設定した読み込み件数分だけ取得を繰り返す
-	for ($i=0; $i<$num_of_data; $i++){
-		$entry = $rssdata->channel->item[$i]; //記事1個取得 $date = date("Y年 m月 d日",
-            strtotime($entry->pubDate)); $title = $entry->title; //タイトル取得
-            $link = $entry->link; //リンクURL取得 //出力内容に日付けを入れる
-            $outdata .= '
-            <li>
-              ' . $date; //出力内容にリンク付きでタイトルを入れる $outdata .=
-              '　<a href="' . $link . '"><span>' . $title . '</span></a>
-            </li>
-            '; } echo '
-            <ul>
-              ' . $outdata . '
-            </ul>
-            '; //実行結果を出力する ?>
+	            //設定した読み込み件数分だけ取得を繰り返す
+	            for ($i=0; $i<$num_of_data; $i++){
+		              $entry = $rssdata->channel->item[$i];
+                  $date = date("Y年 m月 d日",strtotime($entry->pubDate)); $title = $entry->title; //タイトル取得
+                  $link = $entry->link; //リンクURL取得 //出力内容に日付けを入れる
+                  $outdata .= '
+                    <li>
+                      ' . $date; //出力内容にリンク付きでタイトルを入れる $outdata .=
+                      '　<a href="' . $link . '"><span>' . $title . '</span></a>
+                    </li>
+                    '; } echo '
+                    <ul>
+                      ' . $outdata . '
+                    </ul>
+                    '; //実行結果を出力する ?>
 
             <br /><a
               class="btn"
